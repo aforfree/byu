@@ -2,13 +2,18 @@
 # by Evgeny Kozlov
 # github.com/aforfree/byu
 
+
 # colored 'color' word
 OUTPUT_COLOR_WORD = f"\033[91m{'c'}\033[00m\033[92m{'o'}\033[00m\033[93m{'l'}\033[00m\033[94m{'o'}\033[00m\033[95m{'r'}\033[00m"
 
 # User input
-input_name = input(f"Hello there, what's your name (press enter after): ")
-input_color = input(
-    f"and what's your favorite {OUTPUT_COLOR_WORD} (press enter after): ")
+input_name = ''
+input_color = ''
+while not input_name:
+    input_name = input("Hello there, what's your name: ")
+while not input_color:
+    input_color = input(
+        f"and what's your favorite {OUTPUT_COLOR_WORD}: ")
 
 # Answer
 print(f"\nOh, I guess your favorite {OUTPUT_COLOR_WORD} is:")
