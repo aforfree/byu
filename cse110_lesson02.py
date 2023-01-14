@@ -33,6 +33,6 @@ print(f"right in front of my family.")
 
 # creattive part
 article = "an" if adjective_2[0] in "aeiou" else "a"
-print(f"I know, the whole story seems to be AI nonsense or like {bold(article)} {bold(adjective_2)} dream.")
+print(f"I know, the whole story seems to be an AI nonsense or like {bold(article)} {bold(adjective_2)} dream.")
 print(f"However, it is a true story, definitely not chatGPT. I hope you enjoyed it!")
 
