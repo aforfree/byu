@@ -2,6 +2,11 @@
 # by Evgeny Kozlov
 # github.com/aforfree/byu
 
+# Submission comment:
+# Grade: 5. Made it my own
+# Creativity: I added two more lines to the story, the article recognition, 
+# the bold function for output, the underline function for input.
+
 # input underlined
 def input_underlined(prompt):
     return input(f"\033[0m{prompt}\033[4m")
@@ -31,12 +36,7 @@ print(f"I could think to do was to {bold(verb_2)} over and over. Miraculously,")
 print(f"that caused it to stop, but not before it tried to {bold(verb_3)}")
 print(f"right in front of my family.")
 
-# creattive part
+# creattive part, article determined by the first letter of the adjective, and one more word added
 article = "an" if adjective_2[0] in "aeiou" else "a"
 print(f"I know, the whole story seems to be an AI nonsense or like {bold(article)} {bold(adjective_2)} dream.")
 print(f"However, it is a true story, definitely not chatGPT. I hope you enjoyed it!")
-
-# Submission comment:
-# Grade: 5. Made it my own
-# Creativity: I added two more lines to the story, the article recognition, 
-# the bold function for output, the underline function for input.
