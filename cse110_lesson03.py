@@ -4,14 +4,14 @@
 
 # Submission comment:
 # Grade: 5. Made it my own
-# Creativity: I added tip to calculate total
+# Creativity: I added tip
 
 child_meal_price = float(input("What is the price of a child's meal? $"))
 adult_meal_price = float(input("What is the price of an adult's meal? $"))
 chiildren_amount = int(input("How many children are there? "))
 adults_amount = int(input("How many adults are there? "))
 sales_tax_rate = float(input("What is the sales tax rate? %"))
-tip_amount = float(input("What is the tip amount? %"))
+tip_amount = float(input("What is the tip? %"))
 
 subtotal = child_meal_price * chiildren_amount + \
     adult_meal_price * adults_amount
