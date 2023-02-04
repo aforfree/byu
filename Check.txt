@@ -1,0 +1,33 @@
+def play_game():
+    print("You are walking through a dark forest and find two items: a MATCH and a FLASHLIGHT.")
+    choice = input("Which one do you want to pick up? (match or flashlight) ").lower()
+
+    if choice == "match":
+        print("You pick up the match and strike it, and for an instant, the forest around you is illuminated.")
+        print("You see a large grizzly bear, and then the match burns out.")
+        choice = input("Do you want to RUN, or HIDE behind a tree? (run or hide) ").lower()
+        if choice == "run":
+            print("You run as fast as you can, but the bear catches up and attacks you.")
+            print("Game Over.")
+        elif choice == "hide":
+            print("You hide behind a tree, and the bear eventually wanders off.")
+            print("You survive.")
+        else:
+            print("Invalid option. Game Over.")
+    elif choice == "flashlight":
+        print("You pick up the flashlight and turn it on.")
+        print("You see the pathway lit up in front of you, but you thought you also heard something off to the side.")
+        choice = input("Do you want to FOLLOW the path or LOOK in the trees for the thing that made the noise? (follow or look) ").lower()
+        if choice == "follow":
+            print("You follow the path and make it safely out of the forest.")
+            print("You win!")
+        elif choice == "look":
+            print("You look in the trees and see a group of angry squirrels.")
+            print("They attack you.")
+            print("Game Over.")
+        else:
+            print("Invalid option. Game Over.")
+    else:
+        print("Invalid option. Game Over.")
+
+play_game()
