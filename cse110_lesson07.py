@@ -31,13 +31,13 @@ def play_with_hints(word):
             print("You quit the game.")
             break
 
-        guess_count += 1
-
         if len(user_input) != len(word):
             print("Sorry, the guess must have the same number \n"
                   "of letters as the secret word.")
             continue
-        elif user_input == word.lower():
+
+        guess_count += 1
+        if user_input == word:
             print("You guessed the word! Congratulations! "
                   f"It took you {guess_count} guesses.")
             break
